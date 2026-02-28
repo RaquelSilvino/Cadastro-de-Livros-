@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: content">
+<div>
+    <div class="hero" style="text-align:center;margin:16px 0;">
+        <img th:src="@{i magem/ChatGPTimg.png}"
+     alt="ChatGPT"
+     style="max-width:100%;height:auto;">
+    </div>
+    <section>
+        <h2>Livros</h2>
+        <ul>
+            <li th:each="livro : ${livros}" th:text="${livro.titulo} + ' (' + ${livro.ano} + ') - ' + ${livro.genero}"></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Usuários</h2>
+        <ul>
+            <li th:each="u : ${usuarios}" th:text="${u.nome} + ' - ' + ${u.email} + ' - ' + ${u.telefone}"></li>
+        </ul>
+    </section>
+</div>
+</html>

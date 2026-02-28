@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        /* fallback styles in case CSS not loaded */
+        body{font-family: Arial, Helvetica, sans-serif; margin:0; padding:0}
+        header{background:#432c50;color:#ffffff70;padding:1rem}
+        main{padding:1rem}
+        footer{background:#efecf1;padding:0.5rem;text-align:center}
+    </style>
+    <img th:src="@{/IMG/ChatGPTimg.png}" 
+     alt="ChatGPT"
+     style="max-width:100%;height:auto;">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Biblioteca</h1>
+    </div>
+</header>
+<main>
+    <div class="container" th:fragment="content">
+        <!-- conteúdo substituído por páginas -->
+    </div>
+</main>
+<footer>
+    <small>Sistema Biblioteca — exemplo simples</small>
+</footer>
+</body>
+</html>
+">
